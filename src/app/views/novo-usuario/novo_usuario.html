@@ -1,0 +1,43 @@
+<form class="formulario" (ngSubmit)="enviar()" #userForm="ngForm">
+
+  <h2>Cadastro de Usuário</h2>
+
+  <mat-form-field appearance="fill" class="campo">
+    <mat-label>Nome</mat-label>
+    <input matInput type="text" [(ngModel)]="usuario.UserName" name="UserName" required>
+  </mat-form-field>
+
+  <span *ngIf="emailCtrl.invalid && emailCtrl.touched" style="color:red">E-mail inválido</span>
+  <mat-form-field appearance="fill" class="campo">
+    <mat-label>E-mail</mat-label>
+    <input matInput type="email" [(ngModel)]="usuario.Email" name="Email" required email #emailCtrl="ngModel">
+  </mat-form-field>
+
+  <span style="color: red;">{{ mensagemAlertaSenha }}</span>
+  <mat-form-field appearance="fill" class="campo">
+    <mat-label>Senha</mat-label>
+    <input matInput type="password" [(ngModel)]="usuario.Senha" name="Senha" required>
+  </mat-form-field>
+
+  <span style="color: red;">{{ mensagemAlertaSenha }}</span>
+  <mat-form-field appearance="fill" class="campo">
+    <mat-label>Confirme a senha</mat-label>
+    <input matInput type="password" [(ngModel)]="SenhaConf" name="SenhaConf" required>
+  </mat-form-field>
+
+  <span style="color: red;">{{ mensagemAlertaAno }}</span>
+  <mat-form-field appearance="fill" class="campo">
+    <mat-label>Data de Nascimento</mat-label>
+    <input matInput [matDatepicker]="inicio" [matDatepickerFilter]="filtro" [(ngModel)]="usuario.dataNascimento" name="dataNascimento">
+    <mat-datepicker-toggle matIconSuffix [for]="inicio"></mat-datepicker-toggle>
+    <mat-datepicker #inicio></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="campo">
+    <mat-label>Número de Celular</mat-label>
+    <input matInput type="text" maxlength="15" [(ngModel)]="usuario.Numero_Celular" name="Numero_Celular" (input)="formatarTelefone($event)">
+  </mat-form-field>
+
+  <button mat-button color="primary" type="submit">Cadastrar</button>
+  <a routerLink="/login">Já possui uma conta? Faça login</a>
+</form>

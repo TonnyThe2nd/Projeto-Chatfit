@@ -1,0 +1,16 @@
+<form class="login-form">
+  <h2>Login</h2>
+
+  <mat-form-field appearance="fill" class="campo">
+    <mat-label>E-mail</mat-label>
+    <input matInput type="email" [(ngModel)]="login.Email" [ngModelOptions]="{standalone: true}" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="campo">
+    <mat-label>Senha</mat-label>
+    <input matInput type="password" [(ngModel)]="login.Senha" [ngModelOptions]="{standalone: true}" required>
+  </mat-form-field>
+
+  <a mat-button routerLink="/cadastro">Não possui uma conta? Cadastre-se</a>
+  <button mat-raised-button color="primary" type="submit" (click)="onLogin()">Entrar</button>
+</form>
