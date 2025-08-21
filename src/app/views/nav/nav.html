@@ -1,0 +1,37 @@
+<mat-sidenav-container class="sidenav-container">
+  <!-- Sidenav lateral -->
+  <mat-sidenav #drawer mode="side" [(opened)]="opened" class="sidenav">
+    <h2 class="title">FitChat</h2>
+    <mat-nav-list>
+      <a mat-list-item (click)="navegar('home')" routerLinkActive="active" routerLinkActiveOptions="{ exact: true }">
+        <mat-icon mat-list-icon>home</mat-icon>
+        <span mat-line>Home</span>
+      </a>
+      <a mat-list-item (click)="navegar('perfil')" routerLinkActive="active" routerLinkActiveOptions="{ exact: true }">
+        <mat-icon mat-list-icon>person</mat-icon>
+        <span mat-line>Perfil</span>
+      </a>
+      <a mat-list-item (click)="navegar('chat')" routerLinkActive="active" routerLinkActiveOptions="{ exact: true }">
+        <mat-icon mat-list-icon>message</mat-icon>
+        <span mat-line>Chat</span>
+      </a>
+      <a mat-list-item (click)="sair()">
+        <mat-icon mat-list-icon>exit_to_app</mat-icon>
+        <span mat-line>Sair</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="drawer.toggle()" class="menu-button">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>FitChat</span>
+    </mat-toolbar>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

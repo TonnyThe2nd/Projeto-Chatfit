@@ -1,0 +1,50 @@
+<form [formGroup]="formulario" class="perfil-form">
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Nome</mat-label>
+    <input matInput placeholder="Digite seu nome" formControlName="nome">
+    <mat-error *ngIf="formulario.get('nome')?.hasError('required')">
+      Nome é obrigatório
+    </mat-error>
+    <mat-error *ngIf="formulario.get('nome')?.hasError('minlength')">
+      Nome muito curto
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Digite seu email" formControlName="email">
+    <mat-error *ngIf="formulario.get('email')?.hasError('required')">
+      Email é obrigatório
+    </mat-error>
+    <mat-error *ngIf="formulario.get('email')?.hasError('email')">
+      Email inválido
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Celular</mat-label>
+    <input matInput  maxlength="15" placeholder="Digite seu celular" formControlName="celular" (input)="formatarTelefone($event)">
+    <mat-error *ngIf="formulario.get('celular')?.hasError('required')">
+      Celular é obrigatório
+    </mat-error>
+    <mat-error *ngIf="formulario.get('celular')?.hasError('pattern')">
+      Apenas números (10-11 dígitos)
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Data de Nascimento</mat-label>
+    <input matInput [matDatepicker]="inicio" [matDatepickerFilter]="filtro" formControlName="data_nascimento">
+    <mat-datepicker-toggle matSuffix [for]="inicio"></mat-datepicker-toggle>
+    <mat-datepicker #inicio></mat-datepicker>
+  </mat-form-field>
+
+  <div class="button-row">
+    <button mat-raised-button color="primary" type="button" (click)="alterarEstadoInputs(true)">
+      Editar
+    </button>
+    <button *ngIf="mostrarBotao" mat-raised-button color="accent" type="submit" (click)="atualizarDados()">
+      Salvar
+    </button>
+  </div>
+</form>

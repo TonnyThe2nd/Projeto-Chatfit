@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>FitChat</h2>
+
+  <div class="chat-box chat-messages">
+    <div *ngFor="let msg of messages" [ngClass]="{'user-msg': msg.user === 'eu', 'bot-msg': msg.user === 'bot'}">
+      <div class="message-text">
+        <strong>{{ msg.user === 'eu' ? 'Você:' : 'Bot:' }}</strong> {{ msg.text }}
+      </div>
+    </div>
+  </div>
+
+  <div class="input-area">
+    <input [(ngModel)]="novaMensagem" placeholder="Digite sua pergunta" (keyup.enter)="enviarMensagem()" />
+    <button mat-raised-button color="primary" (click)="enviarMensagem()">Enviar</button>
+  </div>
+</div>
