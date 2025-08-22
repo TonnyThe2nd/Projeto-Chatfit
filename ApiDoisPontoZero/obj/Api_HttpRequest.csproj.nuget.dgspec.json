@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\antonioso\\source\\repos\\ApiDoisPontoZero\\ApiDoisPontoZero\\Api_HttpRequest.csproj": {}
+    "C:\\Users\\antonioso\\Documents\\ChatBot\\cadastro\\cadastro\\ApiDoisPontoZero\\Api_HttpRequest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\antonioso\\source\\repos\\ApiDoisPontoZero\\ApiDoisPontoZero\\Api_HttpRequest.csproj": {
+    "C:\\Users\\antonioso\\Documents\\ChatBot\\cadastro\\cadastro\\ApiDoisPontoZero\\Api_HttpRequest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antonioso\\source\\repos\\ApiDoisPontoZero\\ApiDoisPontoZero\\Api_HttpRequest.csproj",
+        "projectUniqueName": "C:\\Users\\antonioso\\Documents\\ChatBot\\cadastro\\cadastro\\ApiDoisPontoZero\\Api_HttpRequest.csproj",
         "projectName": "Api_HttpRequest",
-        "projectPath": "C:\\Users\\antonioso\\source\\repos\\ApiDoisPontoZero\\ApiDoisPontoZero\\Api_HttpRequest.csproj",
+        "projectPath": "C:\\Users\\antonioso\\Documents\\ChatBot\\cadastro\\cadastro\\ApiDoisPontoZero\\Api_HttpRequest.csproj",
         "packagesPath": "C:\\Users\\antonioso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\antonioso\\source\\repos\\ApiDoisPontoZero\\ApiDoisPontoZero\\obj\\",
+        "outputPath": "C:\\Users\\antonioso\\Documents\\ChatBot\\cadastro\\cadastro\\ApiDoisPontoZero\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

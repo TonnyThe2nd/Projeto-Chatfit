@@ -52,6 +52,7 @@ export class NovoUsuario {
   }
 
   enviar() {
+    console.log(this.usuario.Numero_Celular)
     if(this.usuario.Senha.localeCompare(this.SenhaConf)){
       this.mensagemAlertaSenha = 'Senhas não coincidem!';
     }else if(new Date(this.usuario.dataNascimento) > new Date(2010, 0, 1)){

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hnznjs7ashM=",
+  "dgSpecHash": "0rzsMlhpiNU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\antonioso\\source\\repos\\ApiDoisPontoZero\\ApiDoisPontoZero\\Api_HttpRequest.csproj",
+  "projectFilePath": "C:\\Users\\antonioso\\Documents\\ChatBot\\cadastro\\cadastro\\ApiDoisPontoZero\\Api_HttpRequest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\antonioso\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\antonioso\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

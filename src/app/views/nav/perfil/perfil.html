@@ -23,18 +23,18 @@
 
   <mat-form-field appearance="outline" class="full-width">
     <mat-label>Celular</mat-label>
-    <input matInput  maxlength="15" placeholder="Digite seu celular" formControlName="celular" (input)="formatarTelefone($event)">
-    <mat-error *ngIf="formulario.get('celular')?.hasError('required')">
+    <input matInput  maxlength="15" placeholder="Digite seu celular" formControlName="Numero_Celular" (input)="formatarTelefone($event)">
+    <mat-error *ngIf="formulario.get('Numero_Celular')?.hasError('required')">
       Celular é obrigatório
     </mat-error>
-    <mat-error *ngIf="formulario.get('celular')?.hasError('pattern')">
+    <mat-error *ngIf="formulario.get('Numero_Celular')?.hasError('pattern')">
       Apenas números (10-11 dígitos)
     </mat-error>
   </mat-form-field>
 
   <mat-form-field appearance="outline" class="full-width">
     <mat-label>Data de Nascimento</mat-label>
-    <input matInput [matDatepicker]="inicio" [matDatepickerFilter]="filtro" formControlName="data_nascimento">
+    <input matInput [matDatepicker]="inicio" [matDatepickerFilter]="filtro" formControlName="dataNascimento">
     <mat-datepicker-toggle matSuffix [for]="inicio"></mat-datepicker-toggle>
     <mat-datepicker #inicio></mat-datepicker>
   </mat-form-field>

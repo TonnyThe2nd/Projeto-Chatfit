@@ -35,8 +35,8 @@ export class Perfil implements OnInit{
     this.formulario = this.fb.group({
       nome: [{ value: '', disabled: true }, [Validators.required, Validators.minLength(3)]],
       email: [{value: '', disabled: true}, [Validators.required, Validators.email]],
-      celular: [{value: '', disabled: true}, [Validators.required, Validators.pattern(/^\d{10,11}$/)]],
-      data_nascimento: new FormControl({ value: new Date(), disabled: true }, [Validators.required])
+      Numero_Celular: [{value: '', disabled: true}, [Validators.required, Validators.pattern(/^\d{10,11}$/)]],
+      dataNascimento: new FormControl({ value: new Date(), disabled: true }, [Validators.required])
     });
     this.salvarToken = this.token.getToken()
     this.decoded = jwtDecode(this.salvarToken)
@@ -49,8 +49,8 @@ export class Perfil implements OnInit{
           this.formulario.patchValue({
             nome: res.userName,
             email: res.email,
-            celular: res.numero_Celular,
-            data_nascimento: res.dataNascimento
+            Numero_Celular: res.Numero_Celular,
+            dataNascimento: res.dataNascimento
           });
           this.cdr.detectChanges();
         },
@@ -74,8 +74,8 @@ export class Perfil implements OnInit{
     } else {
       this.formulario.get('nome')?.disable();
       this.formulario.get('email')?.disable();
-      this.formulario.get('celular')?.disable();
-      this.formulario.get('data_nascimento')?.disable();
+      this.formulario.get('Numero_Celular')?.disable();
+      this.formulario.get('dataNascimento')?.disable();
     }
 
     this.mostrarBotao = habilitar;
@@ -95,8 +95,8 @@ export class Perfil implements OnInit{
     const dadosPatch: any = { id: usuario.id };
     if (usuario.nome) dadosPatch.nome = usuario.nome;
     if (usuario.email) dadosPatch.email = usuario.email;
-    if (usuario.celular) dadosPatch.celular= usuario.celular;
-    if (usuario.data_nascimento) dadosPatch.data_nascimento = usuario.data_nascimento;
+    if (usuario.Numero_Celular) dadosPatch.Numero_Celular= usuario.Numero_Celular;
+    if (usuario.dataNascimento) dadosPatch.dataNascimento = usuario.dataNascimento;
     this.dados.atualizarDados(dadosPatch).subscribe({
       next: (res) => {console.log("Sucesso: ", res), this.alterarEstadoInputs(false)},
       error : (err) => {console.log("Erro: ", err)}

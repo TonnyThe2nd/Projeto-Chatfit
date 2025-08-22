@@ -5,8 +5,8 @@ export interface DadosUsuario {
   id: number;
   nome: string;
   email: string;
-  celular: string;
-  data_nascimento: string;
+  Numero_Celular: string;
+  dataNascimento: string;
 }
 
 @Injectable({
