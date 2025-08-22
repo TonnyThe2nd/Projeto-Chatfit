@@ -7,14 +7,14 @@ namespace ApiDoisPontoZero.Models.Entities
     {
         [Key]
         public int Id { get; set; }
-        [JsonPropertyName("nome")]
+        [JsonPropertyName("Username")]
         public string? UserName { get; set; }
-
+        [JsonPropertyName("Email")]
         public string? Email { get; set; }
         public string? Senha { get; set; }
-        [JsonPropertyName("data_nascimento")]
+        [JsonPropertyName("dataNascimento")]
         public DateTime dataNascimento { get; set; }
-        [JsonPropertyName("celular")]
+        [JsonPropertyName("Numero_Celular")]
         public string? Numero_Celular { get; set; }
     }
 }
