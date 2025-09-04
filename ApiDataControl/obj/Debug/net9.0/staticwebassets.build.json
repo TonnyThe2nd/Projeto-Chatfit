@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "drujW3MkplUC0gaQANwVUhQMJ6xgFCgYQFNqJ9E9axQ=",
-  "Source": "ApiDoisPontoZero",
-  "BasePath": "_content/ApiDoisPontoZero",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"CuQ2qwHvEIG1DoO1jljxCbLV+s4NX+75CmMoGwHr69A=","Source":"Api_HttpRequest","BasePath":"_content/Api_HttpRequest","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

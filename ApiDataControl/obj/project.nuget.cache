@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E9Afmg57xFA=",
+  "dgSpecHash": "ayhJS/ug1rY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\antonioso\\Documents\\ChatBot\\python_api\\ApiDataControl\\Api_HttpRequest.csproj",
+  "projectFilePath": "C:\\Users\\antonioso\\Documents\\ChatBot\\Projeto-Chatfit\\ApiDataControl\\Api_HttpRequest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\antonioso\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\antonioso\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

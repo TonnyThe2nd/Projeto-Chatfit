@@ -2544,11 +2544,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\antonioso\\Documents\\ChatBot\\python_api\\ApiDataControl\\Api_HttpRequest.csproj",
+      "projectUniqueName": "C:\\Users\\antonioso\\Documents\\ChatBot\\Projeto-Chatfit\\ApiDataControl\\Api_HttpRequest.csproj",
       "projectName": "Api_HttpRequest",
-      "projectPath": "C:\\Users\\antonioso\\Documents\\ChatBot\\python_api\\ApiDataControl\\Api_HttpRequest.csproj",
+      "projectPath": "C:\\Users\\antonioso\\Documents\\ChatBot\\Projeto-Chatfit\\ApiDataControl\\Api_HttpRequest.csproj",
       "packagesPath": "C:\\Users\\antonioso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\antonioso\\Documents\\ChatBot\\python_api\\ApiDataControl\\obj\\",
+      "outputPath": "C:\\Users\\antonioso\\Documents\\ChatBot\\Projeto-Chatfit\\ApiDataControl\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2582,7 +2582,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -2628,7 +2628,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
